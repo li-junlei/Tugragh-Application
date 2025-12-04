@@ -78,57 +78,45 @@ TuGraph 采用属性图模型（Property Graph Model），其核心组成包括�
 
 1.使用Docker打开TuGraph并通过浏览器打开其web前端
 
-![](./media/media/image1.png){width="5.768055555555556in"
-height="3.2444444444444445in"}
+![](./media/media/image1.png)
 
 2.输入账号密码成功登录
 
-![](./media/media/image2.png){width="5.768055555555556in"
-height="3.2444444444444445in"}
+![](./media/media/image2.png)
 
 3\. 对Transactions
 Dataset数据集（txs_classes.csv、txs_edgelist.csv）进行图建模和数据导入
 
 （1）添加顶点标签
 
-![](./media/media/image3.png){width="5.768055555555556in"
-height="3.2444444444444445in"}
+![](./media/media/image3.png)
 
 （2）添加边标签
 
-![](./media/media/image4.png){width="5.768055555555556in"
-height="3.2444444444444445in"}
+![](./media/media/image4.png)
 
 （3）选择映射并导入数据
 
-![](./media/media/image5.png){width="5.768055555555556in"
-height="3.2444444444444445in"}
+![](./media/media/image5.png)
 
-![](./media/media/image6.png){width="5.768055555555556in"
-height="3.2444444444444445in"}
+![](./media/media/image6.png)
 
-![](./media/media/image7.png){width="5.768055555555556in"
-height="3.2444444444444445in"}
+![](./media/media/image7.png)
 
 4\. 对Actors
 Dataset数据集（wallets_classes.csv、AddrAddr_edgelist.csv）进行图建模和数据导入
 
 （1）创建新的子图"wallet"，添加顶点标签
 
-![](./media/media/image8.png){width="5.768055555555556in"
-height="3.2444444444444445in"}
+![](./media/media/image8.png)
 
 （2）添加边标签
 
-![](./media/media/image9.png){width="5.768055555555556in"
-height="3.2444444444444445in"}
+![](./media/media/image9.png)
 
 （3）选择映射并导入数据
 
-![](./media/media/image10.png){width="5.768055555555556in"
-height="3.2444444444444445in"}![](./media/media/image11.png){width="5.768055555555556in"
-height="3.2444444444444445in"}
-
+![](./media/media/image10.png)![](./media/media/image11.png)
 5.使用Cypher语句进行查询
 
 （1）查询点
@@ -137,8 +125,7 @@ MATCH (n) WHERE n.class="2" RETURN n LIMIT 100
 
 查询100个class为2（合法）的点
 
-![](./media/media/image12.png){width="5.768055555555556in"
-height="3.2444444444444445in"}
+![](./media/media/image12.png)
 
 （2）查询边
 
@@ -146,5 +133,5 @@ match p = (n)-\[r\]-\>(m) return p LIMIT 100
 
 匹配任意关系
 
-![](./media/media/image13.png){width="5.768055555555556in"
-height="3.24375in"}
+![](./media/media/image13.png)
+
